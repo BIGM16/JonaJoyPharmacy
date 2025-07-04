@@ -1,0 +1,89 @@
+:root {
+  /* CSS HEX */
+  --oxford-blue: #0b132bff;
+  --space-cadet: #1c2541ff;
+  --yinmn-blue: #3a506bff;
+  --verdigris: #5bc0beff;
+  --fluorescent-cyan: #6fffe9ff;
+  /* CSS HEX */
+  --battleship-gray: #7d847cff;
+  --black: #000000ff;
+  --ash-gray: #c7d3c6ff;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.hero-pattern {
+  position: relative;
+  z-index: 1;
+  height: 80vh;
+}
+footer {
+  position: relative;
+  z-index: 1;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  width: 300px;
+  height: 300px;
+  background: url(/Images/logoVf.png);
+  background-position: center;
+  background-size: contain;
+}
+.hero-pattern::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(111, 255, 233, 0.227)),
+    url(/Images/Medoc.jpg);
+  background-size: cover;
+  background-position: center;
+  
+  z-index: -1;
+  opacity: 1;
+}
+nav span {
+  color: var(--space-cadet);
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+.show {
+  display: block;
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+  transition: height 0.3s ease-in-out;
+  top: -300px;
+}
+#mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+nav img {
+  border-radius: 50%;
+}
+
+.place-logo {
+  background-image: url(/Images/Medoc2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  width: 300px;
+}
